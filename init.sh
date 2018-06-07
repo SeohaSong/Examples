@@ -7,7 +7,7 @@
 
     if [ "$1" = "" ]
     then
-        echo "[$0] . init.sh MODULE_NAME"
+        echo "[$0] . init.sh <module_name>"
         exit
     else
         touch __init__.py
