@@ -14,6 +14,8 @@
     echo \
 "import os
 
+os.chdir(os.path.dirname(__file__))
+os.chdir('..')
 os.system('git submodule init')
 os.system('git submodule update')"\
     > module_/init.py
