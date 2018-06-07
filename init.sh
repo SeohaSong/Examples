@@ -5,8 +5,11 @@
         exit
     fi
 
-    if [ "$1" != "" ]
+    if [ "$1" = "" ]
     then
+        echo "[$0] . init.sh MODULE_NAME"
+        exit
+    else
         touch __init__.py
         touch module.py
         cp $home_path/SEOHASONG/.gitignore .
