@@ -10,13 +10,14 @@
         echo "[$0] . init.sh <module_name>"
     fi
 
-    mkdir module && touch module/init.py
+    mkdir module_ && touch module_/init.py
     echo \
 "import os
+
 os.system('git submodule init')
 os.system('git submodule update')"\
-    > module/init.py
-    echo "from .module import init" > __init__.py
+    > module_/init.py
+    echo "from .module_ import init" > __init__.py
     touch module.py
     cp $home_path/SEOHASONG/.gitignore .
     echo "# $1" > README.md
