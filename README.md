@@ -1,5 +1,5 @@
 # template.module
 
 ```bash
-. init.sh <module name>
+. init.sh MODULE_NAME
 ```
